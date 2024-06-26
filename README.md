@@ -1,7 +1,7 @@
 # Visualization of First-Order Logic
 
-- types are wires
-- predicates are nodes
+- Types are wires
+- Predicates are nodes
 
 - p and q         : put the nodes side-by-side
 - match variables : plug in the "copy" map
@@ -17,7 +17,7 @@
 `stack build`
 `stack exec holdtt-exe "basics.txt"`
 
-displays options for basic predicate operations,
+Displays options for basic predicate operations,
 including a more complex example like "herbivore".
 
 - `load 1 ___` : plug an option to display it
@@ -29,5 +29,6 @@ including a more complex example like "herbivore".
 - `save`         : save the key-value store
 
 Overall, tons of room for improvement --
-but Graphviz is limited, so it's not a high priority;
-this is mainly a basic proof of concept.
+but Graphviz is limited, so it's not a high priority.
+
+This is mainly a simple proof of concept.
