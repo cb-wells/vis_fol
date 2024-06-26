@@ -4,15 +4,18 @@ Types are wires, and relations are nodes.
 
 All relations are built from the following operations.
 
+| | |
+|--|--|
+| p and q | put the nodes side-by-side |
+| match variables | plug in the "copy" map |
+| some x, p[x] | cap wire x |
+| not p | wrap p in annulus of opposite color |
 
-| p and q | put the nodes side-by-side
-| match variables | plug in the "copy" map
-| some x, p[x] | cap wire x
-| not p | wrap p in annulus of opposite color
-
-| p or q | = | not( not(p) and not(q) )
-| all x, p[x] | = | not( some x, not p[x] )
-| if p then q | = | not( p and not(q) )
+| | |
+|--|--|
+| p or q | = | not( not(p) and not(q) ) |
+| all x, p[x] | = | not( some x, not p[x] ) |
+| if p then q | = | not( p and not(q) ) |
 
 ---------------------------------
 
