@@ -25,13 +25,14 @@ All relations are built from the following operations.
 Displays options for basic predicate operations,
 including a more complex example like "herbivore".
 
-- `load 1 ___` : plug an option to display it
-- `load 0 ___` : same, without all the syntax
-
-- `draw 1/0 ___` : view a hand-written predicate
-- `set p := ___` : make a key to store a new predicate
-- `delete p`     : delete p from key-value store
-- `save`         : save the key-value store
+| | |
+|-|-|
+| `load 1 ___` | plug an option to display it |
+| `load 0 ___` | same, without all the syntax |
+| `draw 1/0 ___` | view a hand-written predicate |
+| `set p := ___` | make a key to store a new predicate |
+| `delete p`     | delete p from key-value store |
+| `save`         | save the key-value store |
 
 Overall, tons of room for improvement --
 but Graphviz is limited, so it's not a high priority.
