@@ -1,0 +1,82 @@
+graph g { 
+splines=ortho; 
+nodesep=1; 
+ranksep=0.2;
+fontname="Courier New"; 
+fontsize = 18;
+esep=1;
+node [fontname="Courier New", penwidth=2, fontsize=18,style=rounded]; 
+edge [fontname="Courier New", penwidth=2, fontsize=18];
+subgraph cluster_p0_i0{
+ bgcolor = "white";
+ style="rounded";
+subgraph cluster_p0_i0{
+ bgcolor = "white";
+ style="rounded";
+subgraph cluster_p0_i0_u0{
+ bgcolor = "white";
+ style="rounded";
+p0_i0_u0_p0[shape=box, width=2, label="R"];
+p0_i0_u0_p0_s0[shape=point, xlabel=""];
+p0_i0_u0_p0 -- p0_i0_u0_p0_s0;
+p0_i0_u0_p0_s1[shape=point, xlabel=""];
+p0_i0_u0_p0 -- p0_i0_u0_p0_s1;
+
+p0_i0_u0_p1[shape=box, width=2, label="S"];
+p0_i0_u0_p1_s0[shape=point, xlabel=""];
+p0_i0_u0_p1 -- p0_i0_u0_p1_s0;
+p0_i0_u0_p1_s1[shape=point, xlabel=""];
+p0_i0_u0_p1 -- p0_i0_u0_p1_s1;
+
+labelloc = "b"; label = "" }
+
+{rank=same;p0_i0_u0_s0[shape=point, xlabel=""];
+p0_i0_u0_s1[shape=point, xlabel=""];
+p0_i0_u0_s2[shape=point, xlabel=""];
+p0_i0_u0_s3[shape=point, xlabel=""];
+}
+p0_i0_u0_p0_s0 -- p0_i0_u0_s0;
+p0_i0_u0_p0_s1 -- p0_i0_u0_s1;
+p0_i0_u0_p1_s0 -- p0_i0_u0_s2;
+p0_i0_u0_p1_s1 -- p0_i0_u0_s3;
+p0_i0_u0_n0[shape=point,label="", xlabel=""];
+p0_i0_u0_n1[shape=point,label="", xlabel=""];
+p0_i0_u0_n2[shape=point,label="", xlabel=""];
+p0_i0_u0_t0[shape=point, label="", xlabel=""];
+p0_i0_u0_s0 -- p0_i0_u0_t0;
+p0_i0_u0_t1[shape=point, label="", xlabel=""];
+p0_i0_u0_s1 -- p0_i0_u0_t1;
+p0_i0_u0_t2[shape=point, label="", xlabel=""];
+p0_i0_u0_s2 -- p0_i0_u0_t2;
+p0_i0_u0_t3[shape=point, label="", xlabel=""];
+p0_i0_u0_s3 -- p0_i0_u0_t3;
+p0_i0_u0_n1[style=filled, label="",fillcolor="black",shape=triangle,width=0.2,regular=true];
+p0_i0_u0_n1[style=filled, label="",fillcolor="black",shape=triangle,width=0.2,regular=true];
+p0_i0_u0_t0 -- p0_i0_u0_n0;
+p0_i0_u0_t1 -- p0_i0_u0_n1;
+p0_i0_u0_t2 -- p0_i0_u0_n1;
+p0_i0_u0_t3 -- p0_i0_u0_n2;
+labelloc = "b"; label = ""
+}
+{rank=same;
+p0_i0_s0[shape=point, xlabel=""];
+p0_i0_s1[shape=point, xlabel=""];
+p0_i0_s2[shape=point, xlabel=""];
+}
+p0_i0_u0_n0 -- p0_i0_s0;
+p0_i0_u0_n1 -- p0_i0_s1;
+p0_i0_u0_n2 -- p0_i0_s2;
+p0_i0_t0[shape=point, label="", xlabel=""];
+p0_i0_s0 -- p0_i0_t0;
+p0_i0_t1[shape=point, label="", xlabel=""];
+p0_i0_s2 -- p0_i0_t1;
+p0_i0_s1[style=filled, label="",fillcolor="black",shape=invtriangle,width=0.2,regular=true];
+labelloc = "b"; label = ""
+}
+{rank=same;
+p0_s0[shape=point, xlabel=""];
+p0_s1[shape=point, xlabel=""];
+}
+p0_i0_t0 -- p0_s0;
+p0_i0_t1 -- p0_s1;
+}
