@@ -28,7 +28,7 @@ including a more complex example like "herbivore".
 - `load 1 ___` : plug an option to display it
 - `load 0 ___` : same, without all the syntax
 
-- `draw 1/0 ___` : plug a hand-written predicate
+- `draw 1/0 ___` : view a hand-written predicate
 - `set p := ___` : make a key to store a new predicate
 - `delete p`     : delete p from key-value store
 - `save`         : save the key-value store
