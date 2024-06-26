@@ -1,16 +1,18 @@
 # Visualization of First-Order Logic
 
-- Types are wires
-- Predicates are nodes
+Types are wires, and relations are nodes.
 
-- p and q         : put the nodes side-by-side
-- match variables : plug in the "copy" map
-- some x, p[x]    : cap wire x
-- not p           : wrap p in annulus of opposite color
+All relations are built from the following operations.
 
-- p or q      = not( not(p) and not(q) )
-- all x, p[x] = not( some x, not p[x] )
-- if p then q = not( p and not(q) )
+
+| p and q | put the nodes side-by-side
+| match variables | plug in the "copy" map
+| some x, p[x] | cap wire x
+| not p | wrap p in annulus of opposite color
+
+| p or q | = | not( not(p) and not(q) )
+| all x, p[x] | = | not( some x, not p[x] )
+| if p then q | = | not( p and not(q) )
 
 ---------------------------------
 
